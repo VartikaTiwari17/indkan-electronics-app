@@ -1,0 +1,9 @@
+export const products = [
+  { id: 1, name: 'Smartphone X Pro 5G', category: 'Mobile & Accessories', image: 'https://picsum.photos/seed/phone/600/400', description: '6.7-inch AMOLED flagship smartphone with 5G connectivity.', specs: { Display: '6.7" AMOLED', RAM: '8 GB', Storage: '256 GB', MOQ: '100 units' } },
+  { id: 2, name: 'UltraBook 14 Laptop', category: 'Laptops & Computers', image: 'https://picsum.photos/seed/laptop/600/400', description: 'Lightweight business laptop for bulk supply.', specs: { Processor: 'Intel Core i5', RAM: '16 GB', Storage: '512 GB SSD', MOQ: '50 units' } },
+  { id: 3, name: 'Smart LED TV 55"', category: 'Home Appliances', image: 'https://picsum.photos/seed/tv/600/400', description: '4K Ultra HD smart television.', specs: { Size: '55 inch', Resolution: '4K UHD', OS: 'Android TV', MOQ: '40 units' } },
+  { id: 4, name: 'Wireless ANC Headphones', category: 'Audio & Video', image: 'https://picsum.photos/seed/headphone/600/400', description: 'Over-ear Bluetooth headphones with noise cancellation.', specs: { Bluetooth: '5.3', Battery: '40 hrs', MOQ: '200 units' } },
+  { id: 5, name: 'LED Bulb 12W Bulk Pack', category: 'LED Lighting', image: 'https://picsum.photos/seed/led/600/400', description: 'Energy-efficient LED bulbs for wholesale.', specs: { Power: '12W', Lumens: '1200 lm', MOQ: '5000 units' } },
+  { id: 6, name: 'GaN Fast Charger 65W', category: 'Mobile & Accessories', image: 'https://picsum.photos/seed/charger/600/400', description: 'Compact USB-C Power Delivery charger.', specs: { Output: '65W', Ports: '2x USB-C, 1x USB-A', MOQ: '500 units' } }
+];
+export const categories = ['All', ...new Set(products.map(p => p.category))];
